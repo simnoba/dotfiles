@@ -33,6 +33,7 @@ in {
       "video"
       "networkmanager"
       "postgres"
+      "uinput"
     ];
     initialPassword = cfg.initialPassword; # Change with passwd later
     openssh.authorizedKeys = {
