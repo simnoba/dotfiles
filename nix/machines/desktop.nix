@@ -149,6 +149,8 @@
           }
         ];
       };
+
+      settings.gamepad = "ds5";
     };
 
     udev.extraRules = ''
