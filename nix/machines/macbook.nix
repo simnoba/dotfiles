@@ -43,7 +43,7 @@
       kubectx
       kubernetes-helm
       kubeseal
-      # naisdevice-tenant
+      # naisdevice-tenant TODO: get this nix package working
       orion-browser
       parinfer-rust-emacs # emacs dep
       proton-pass
@@ -70,6 +70,7 @@
     ];
     brews = [
       "mole"
+      "nais" # nais cli
       # naisdevice-tenant dependency
       "wireguard-tools"
     ];
@@ -83,10 +84,6 @@
       upgrade = true;
     };
   };
-
-  nix.nixPath = [
-    "nixpkgs=https://nixos.org/channels/nixpkgs-unstable"
-  ];
 
   security.pki.caCertificateBlacklist = [
     "Comodo AAA Services root"
