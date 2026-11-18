@@ -93,6 +93,8 @@
   };
 
   services = {
+    emacs.enable = true;
+    
     flatpak.enable = true;
 
     # Enable USB multiplexing daemon, needed for ifuse.

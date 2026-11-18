@@ -23,6 +23,9 @@
 
   nix.settings.trusted-users = ["nvj"];
 
+  # Don't run as a daemon
+  services.emacs.enable = false;
+
   environment = {
     variables.EDITOR = "vim";
 
@@ -30,7 +33,6 @@
       cameracontroller
       colima
       cplt
-      # The nix-darwin emacs service doesn't add emacs to system packages
       config.services.emacs.package
       coreutils-full
       docker

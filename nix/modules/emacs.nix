@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   services.emacs = {
-    enable = true;
     package = let
       emacsPackage =
         if pkgs.stdenv.hostPlatform.isLinux
